@@ -3,10 +3,10 @@
 ***I worked on this project in my spare time, but unfortunately I no longer work with mikrotik devices and don't have the free time anymore, so consider it as discontinued. Feel free to fork this project and create your own spin.***
 
 # RouterOS Client
-This is a client wrapper for [node-routeros](https://github.com/aluisiora/node-routeros) api for doing common tasks and making the api easier to use for small and large NodeJS projects.
+This is a client wrapper for [node-routeros](https://github.com/davidkyalo/node-routeros) api for doing common tasks and making the api easier to use for small and large NodeJS projects.
 
 ## Getting Started
-These instructions will help you install and use some of the client features, you can get a complete documentation in the [wiki](https://github.com/aluisiora/routeros-client/wiki).
+These instructions will help you install and use some of the client features, you can get a complete documentation in the [wiki](https://github.com/davidkyalo/routeros-client/wiki).
 
 ### Prerequisites
 You must be familiar with [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise), how to chain it, how to catch errors and etc.
@@ -19,13 +19,13 @@ npm install routeros-client --save
 Note: you are not required to install `node-routeros` since it's already a dependency of this lib.
 
 ## Features
-[Everything you get from the `node-routeros`](https://github.com/aluisiora/node-routeros) is still here, plus:
+[Everything you get from the `node-routeros`](https://github.com/davidkyalo/node-routeros) is still here, plus:
  * You can save the menu and reuse it for multiple operations.
  * There is a "Model" feature where you can fire commands on each entry of a menu individually (check the examples).
  * Easy to read and write reusable code.
 
 ## Examples
-Here are some short examples of usage, head to the [wiki](https://github.com/aluisiora/routeros-client/wiki) for a complete documentation.
+Here are some short examples of usage, head to the [wiki](https://github.com/davidkyalo/routeros-client/wiki) for a complete documentation.
 ### Connecting
 ```javascript
 const RouterOSClient = require('routeros-client').RouterOSClient;
@@ -195,7 +195,7 @@ Note that, if are cloning this repo, you must be familiar with [Typescript](http
 ## Running the tests
 There aren't that many tests, but in order to run them, I used [RouterOS CHR](https://mikrotik.com/download) (look for the Cloud Hosted Router if you aren't familiar with it yet) on a virtual machine with 4 interfaces, where the first interface is a bridge of my network card:
 
-![VirtualBox RouterOS CHR Conf](https://raw.githubusercontent.com/aluisiora/routeros-client/master/images/routeros-chr-interfaces.gif)
+![VirtualBox RouterOS CHR Conf](https://raw.githubusercontent.com/davidkyalo/routeros-client/master/images/routeros-chr-interfaces.gif)
 
 Also, the vm gets the 10.62.0.25 ip address, you might want to change that in the test files according to network.
 The user and password was set to admin and admin respectively.
